@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Define custom color variables */
+    --primary: 146 49% 35%; /* Forest Green: #2F855A */
+    --primary-foreground: 210 40% 98%; /* Contrast color for primary */
+    --secondary: 90 46% 61%; /* Yellow: #48BB78 */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Contrast color for secondary */
+    --neutral: 210 16% 75%; /* Moss Green: #A0AEC0 */
+    --hover: 204 71% 68%; /* Sky Blue: #63B3ED */
+    --text-primary: 0 0% 29%; /* Earth Brown: #4A4A4A */
+    --background: 210 27% 98%; /* Light Sand: #F7FAFC */
+
+    /* Base colors */
+    --card: var(--background);
+    --card-foreground: var(--text-primary);
+    --popover: var(--background);
+    --popover-foreground: var(--text-primary);
+    --muted: var(--neutral);
+    --muted-foreground: 215 16% 46%;
+    --accent: var(--neutral);
+    --accent-foreground: var(--text-primary);
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--background);
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: var(--primary);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: var(--background);
+    --card: var(--background);
+    --card-foreground: var(--text-primary);
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
+    --primary: 146 49% 35%;
+    --primary-foreground: var(--background);
+    --secondary: 90 46% 61%;
+    --secondary-foreground: var(--foreground);
+    --neutral: 210 16% 75%;
+    --hover: 204 71% 68%;
+    --text-primary: 0 0% 29%;
+    --accent: var(--neutral);
+    --accent-foreground: var(--background);
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: var(--foreground);
+    --border: var(--neutral);
+    --input: var(--neutral);
+    --ring: var(--primary);
+  }
+}
+
+@layer components {
+  /* Custom utility classes using the defined colors */
+  .bg-primary {
+    @apply bg-[hsl(var(--primary))];
+  }
+
+  .text-primary {
+    @apply text-[hsl(var(--primary-foreground))];
+  }
+
+  .bg-secondary {
+    @apply bg-[hsl(var(--secondary))];
+  }
+
+  .text-secondary {
+    @apply text-[hsl(var(--secondary-foreground))];
+  }
+
+  .bg-neutral {
+    @apply bg-[hsl(var(--neutral))];
+  }
+
+  .text-neutral {
+    @apply text-[hsl(var(--text-primary))];
+  }
+
+  .bg-background {
+    @apply bg-[hsl(var(--background))];
+  }
+
+  .text-background {
+    @apply text-[hsl(var(--background))];
+  }
+}
+
+/* Apply background and text colors for the body */
+@layer base {
+  body {
+    @apply bg-background text-neutral;
+  }
+}
