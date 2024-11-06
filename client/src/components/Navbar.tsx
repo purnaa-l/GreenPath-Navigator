@@ -23,6 +23,9 @@ const Navbar = () => {
           <Link to="/contact" className="hover:text-leafGreen">
             Contact
           </Link>
+          <Link to="/leaderboard" className="hover:text-leafGreen">
+            Leaderboard
+          </Link>
         </nav>
         <Button variant="ghost" className="ml-4 bg-skyBlue text-lightSand hover:bg-leafGreen">Sign Up</Button>
       </div>
