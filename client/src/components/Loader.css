@@ -1,0 +1,35 @@
+/* Loader container to center the loader */
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it covers other elements */
+  }
+  
+  /* Loader text styling */
+  .loader span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    animation: fadeInOut 1.5s infinite; /* Fade in and out animation */
+  }
+  
+  /* Animation for the "Loading..." text */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
