@@ -7,6 +7,7 @@ import LeaderBoardPage from "./pages/LeaderBoardPage";
 import CarbonFootprintPage from "./pages/CarbonFootprintPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminNavbar from "./components/AdminNavbar";
+import MapPage from "./pages/MapPage";
 
 axios.defaults.baseURL = "http://localhost:5000";
 axios.defaults.withCredentials = true;
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/leaderboard" element={<LeaderBoardPage />} />
           <Route path="/calculateCarbon" element={<CarbonFootprintPage />} />
+          <Route path="/map" element={<MapPage/>} />
 
           <Route path="/admin" element={<AdminDashboard/>}/>
         </Routes>

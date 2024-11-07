@@ -20,8 +20,8 @@ const Navbar = () => {
           <Link to="/features" className="hover:text-leafGreen">
             Features
           </Link>
-          <Link to="/contact" className="hover:text-leafGreen">
-            Contact
+          <Link to="/map" className="hover:text-leafGreen">
+            Map
           </Link>
           <Link to="/leaderboard" className="hover:text-leafGreen">
             Leaderboard
