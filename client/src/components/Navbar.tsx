@@ -20,10 +20,14 @@ const Navbar = () => {
           <Link to="/features" className="hover:text-leafGreen">
             Features
           </Link>
+          <Link to="/Leaderboard" className="hover:text-leafGreen">
+            Leaderboard
+          </Link>
           <Link to="/contact" className="hover:text-leafGreen">
             Contact
           </Link>
         </nav>
+        
         <Button variant="ghost" className="ml-4 bg-skyBlue text-lightSand hover:bg-leafGreen">Sign Up</Button>
       </div>
     </header>

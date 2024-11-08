@@ -12,7 +12,7 @@
     --neutral: 210 16% 75%; /* Moss Green: #A0AEC0 */
     --hover: 204 71% 68%; /* Sky Blue: #63B3ED */
     --text-primary: 0 0% 29%; /* Earth Brown: #4A4A4A */
-    --background: 210 27% 98%; /* Light Sand: #F7FAFC */
+    --background: 210 27% 98%;  /* Light Sand: #F7FAFC */
 
     /* Base colors */
     --card: var(--background);
@@ -80,7 +80,6 @@
   .text-neutral {
     @apply text-[hsl(var(--text-primary))];
   }
-
   .bg-background {
     @apply bg-[hsl(var(--background))];
   }
@@ -91,8 +90,22 @@
 }
 
 /* Apply background and text colors for the body */
+
+  
 @layer base {
   body {
     @apply bg-background text-neutral;
+    background-image: url('https://i.pinimg.com/736x/7e/ae/43/7eae43fd5c2fde02423828f499a244ea.jpg'); /* Background image */
+    background-size: cover;
+    background-position: var(--border);
+    
+    background-color: rgba(255, 255, 255, 0.50); /* Adjust opacity here (0.75 for 75%) */
+    
   }
 }
+
+  
+
+  
+
+
