@@ -14,17 +14,11 @@ const Navbar = () => {
           <Link to="/" className="hover:text-leafGreen">
             Home
           </Link>
-          <Link to="/about" className="hover:text-leafGreen">
-            About
+          <Link to="/map" className="hover:text-leafGreen">
+            Map
           </Link>
-          <Link to="/features" className="hover:text-leafGreen">
-            Features
-          </Link>
-          <Link to="/Leaderboard" className="hover:text-leafGreen">
-            Leaderboard
-          </Link>
-          <Link to="/contact" className="hover:text-leafGreen">
-            Contact
+          <Link to="/idea" className="hover:text-leafGreen">
+            Ideas
           </Link>
           <Link to="/leaderboard" className="hover:text-leafGreen">
             Leaderboard
@@ -33,8 +27,14 @@ const Navbar = () => {
             Calculate Carbon Foot Print
           </Link>
         </nav>
-        
-        <Button variant="ghost" className="ml-4 bg-skyBlue text-lightSand hover:bg-leafGreen">Sign Up</Button>
+        <Link to="/login">
+      <Button
+        variant="ghost"
+        className="ml-4 bg-skyBlue text-lightSand hover:bg-leafGreen"
+      >
+        Login
+      </Button>
+    </Link>
       </div>
     </header>
   );
