@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-forestGreen text-lightSand py-6">
       <div className="container mx-auto flex flex-col items-center space-y-4">
         <div className="text-center text-lg font-semibold text-lightSand">
-          GreenPath Navigator © {new Date().getFullYear()}
+        © {new Date().getFullYear()} Green Path Navigator. All rights reserved.
         </div>
         <div className="flex space-x-6 text-lightSand">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

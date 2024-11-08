@@ -90,12 +90,11 @@
 }
 
 /* Apply background and text colors for the body */
-
-  
 @layer base {
   body {
     @apply bg-background text-neutral;
-    background-image: url('https://i.pinimg.com/736x/7e/ae/43/7eae43fd5c2fde02423828f499a244ea.jpg'); /* Background image */
+    /* background-image: url('https://i.pinimg.com/736x/7e/ae/43/7eae43fd5c2fde02423828f499a244ea.jpg'); Background image */
+    background-image: url('/bg2.jpg');
     background-size: cover;
     background-position: var(--border);
     

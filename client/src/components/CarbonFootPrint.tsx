@@ -47,7 +47,7 @@ function CarbonFootprintForm() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-auto bg-lightSand p-4 overflow-auto">
+    <div className="flex flex-col justify-center items-center h-auto p-4 overflow-auto">
       <div className="bg-yellow-50 p-8 rounded-xl shadow-xl w-full max-w-6xl flex flex-col lg:flex-row items-center lg:space-x-8">
         <div className="flex flex-col items-center mb-6 lg:mb-0">
           <img
