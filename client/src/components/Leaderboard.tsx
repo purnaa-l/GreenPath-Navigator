@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Profiles from './profile';
+import Profiles from './Profile';
 import { leaderboardData } from '../../data/leaderboardData';
 
 const LeaderBoard: React.FC = () => {
