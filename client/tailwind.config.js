@@ -59,7 +59,11 @@ export default {
 			  skyBlue: '#63B3ED',
 			  earthBrown: '#4A4A4A',
 			  lightSand: '#F7FAFC',
-  		}
+  		},
+		backdropBlur: {
+			lg: '10px',
+			sm: '4px',
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
