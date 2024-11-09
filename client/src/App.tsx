@@ -13,6 +13,7 @@ import IdeasPage from "./components/user/Idea";
 import PrivateRoute from "./components/ProtectedRotes.tsx";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Model from "./components/model.tsx";
 
 axios.defaults.baseURL = "http://localhost:5000";
 axios.defaults.withCredentials = true;
@@ -34,6 +35,7 @@ function App() {
           <Route path="/map" element={<MapPage />} />
           <Route path="/login" element={<AuthForm />} />
           <Route path="/idea" element={<IdeasPage />} />
+          <Route path="/model" element={<Model />} />
 
           {/* Protect these routes using PrivateRoute */}
           <Route path="/admin" element={<PrivateRoute element={<AdminDashboard />} isAdmin />} />

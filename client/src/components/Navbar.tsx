@@ -1,7 +1,10 @@
+import { useAuth } from "@/context/AuthContext";
 import { Button } from "./ui/button";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { LogOut } from "lucide-react";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
   return (
     <header className="bg-forestGreen text-lightSand">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
@@ -27,14 +30,23 @@ const Navbar = () => {
             Calculate Carbon Foot Print
           </Link>
         </nav>
-        <Link to="/login">
-      <Button
-        variant="ghost"
-        className="ml-4 bg-skyBlue text-lightSand hover:bg-leafGreen"
-      >
-        Login
-      </Button>
-    </Link>
+        {user ? (
+          <div className="flex items-center gap-2 capitalize">
+            <p>{user.email.split("@")[0]}</p>
+            <button onClick={logout}>
+              <LogOut size={"1.1rem"} />
+            </button>
+          </div>
+        ) : (
+          <Link to="/login">
+            <Button
+              variant="ghost"
+              className="ml-4 bg-skyBlue text-lightSand hover:bg-leafGreen"
+            >
+              Login
+            </Button>
+          </Link>
+        )}
       </div>
     </header>
   );
