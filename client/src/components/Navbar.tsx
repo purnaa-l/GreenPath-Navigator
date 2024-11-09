@@ -17,6 +17,9 @@ const Navbar = () => {
           <Link to="/" className="hover:text-leafGreen">
             Home
           </Link>
+          <Link to="/journey" className="hover:text-leafGreen">
+          Start your Sustainable Journey
+          </Link>
           <Link to="/map" className="hover:text-leafGreen">
             Map
           </Link>
@@ -28,6 +31,9 @@ const Navbar = () => {
           </Link>
           <Link to="/calculateCarbon" className="hover:text-leafGreen">
             Calculate Carbon Foot Print
+          </Link>
+          <Link to="/model" className="hover:text-leafGreen">
+          Model
           </Link>
         </nav>
         {user ? (
